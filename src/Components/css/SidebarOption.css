@@ -1,0 +1,17 @@
+.sidebarOption {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 1rem;
+  transition: 340ms ease-in-out;
+}
+
+.sidebarOption > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sidebarOption:hover {
+  background-color: #a9aadd;
+  color: #fff;
+}

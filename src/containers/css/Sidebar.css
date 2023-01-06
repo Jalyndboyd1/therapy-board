@@ -4,18 +4,20 @@
   border-right: 1px solid;
 }
 
-.sidebar__header{
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.sidebar__header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
 }
 
 .sidebar__header > img {
   height: 50px;
 }
 
-.sidebar__header > p{
-    font-weight: 300;
-    font-size: large;
+.sidebar__header > p {
+  font-weight: 300;
+  font-size: large;
 }
+
