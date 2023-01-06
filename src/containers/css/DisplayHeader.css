@@ -1,0 +1,8 @@
+.displayHeader {
+  padding: 10px;
+}
+
+.displayHeader > h3 {
+    font-size: 2rem;
+    font-weight: 300;
+}
