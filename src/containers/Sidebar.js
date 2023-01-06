@@ -12,8 +12,8 @@ export default function Sidebar() {
       <div className="sidebar__routes">
         <SidebarOption path="" label="Home" />
         <SidebarOption path="calendar" label="Calendar" />
+        <SidebarOption path="goals" label="Goal Board" />
         <SidebarOption path="telehealth" label="Telehealth" />
-        <SidebarOption path="reminders" label="Appointment Reminders" />
       </div>
     </div>
   );
