@@ -1,7 +1,7 @@
 .sidebar {
-  flex: 0.2;
+  flex: 0.1;
   height: 100vh;
-  border-right: 1px solid;
+  /* border-right: 1px solid; */
 }
 
 .sidebar__header {
