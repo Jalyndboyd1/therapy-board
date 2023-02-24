@@ -8,7 +8,6 @@ const initialState = {
 export const userData = createSlice({
   name: 'user',
   initialState,
-  // The `reducers` field lets us define reducers and generate associated actions
   reducers: {
     handleUserLogin: (state, action) => {
       state.user = action.payload;
