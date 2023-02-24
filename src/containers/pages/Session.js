@@ -19,6 +19,7 @@ function Session() {
                 // Use Popup to display error in friendly way to user
             }
         }
+        setInputValue('')
     }
 
     return (
@@ -27,13 +28,13 @@ function Session() {
             <div className='session__messages'>
                 {messages.length > 0 ? messages.map((message) => {
                     // key will later be message id
-                    return <p key={Math.floor(Math.random())}>
+                    return <p key={Math.floor(Math.random())} className='session__message'>
                         {message.message}
                     </p>
                 }) : 'Let your therapist know how things are!'}
             </div>
             <div className='session__input'>
-                <input placeholder='Send Message..' value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+                <textarea placeholder='Send Message..' value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
                 <ArrowUpwardRoundedIcon className='send' onClick={(e) => handleSend(e)} />
             </div>
         </div>
