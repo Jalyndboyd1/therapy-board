@@ -11,9 +11,10 @@ export default function Sidebar() {
       {/* Sidebar Routes */}
       <div className="sidebar__routes">
         <SidebarOption path="" label="Home" />
+        <SidebarOption path="session" label="Session" />
         <SidebarOption path="calendar" label="Calendar" />
         <SidebarOption path="goals" label="Goal Board" />
-        <SidebarOption path="telehealth" label="Telehealth" />
+        <SidebarOption path="journal" label="Journal" />
       </div>
     </div>
   );

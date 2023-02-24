@@ -1,0 +1,38 @@
+.session {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.session__messages {
+    padding: 1rem;
+    height: 62vh;
+    overflow-y: scroll;
+}
+
+.session__input {
+    border: 1px solid #9c9797;
+    border-radius: 70px;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.session__input>input {
+    flex: .9;
+    height: 20px;
+    border: none;
+}
+
+.session__input>input:focus {
+    outline: none;
+}
+
+.send {
+    color: #b3b4e1 !important;
+    cursor: pointer;
+}
