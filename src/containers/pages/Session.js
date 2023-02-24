@@ -11,7 +11,8 @@ function Session() {
         if(inputValue){
             try {
                 setMessages([...messages, {
-                    message: inputValue
+                    message: inputValue,
+                    id: Math.ceil(Math.random())
                 }])
             }
             catch {
@@ -28,7 +29,7 @@ function Session() {
             <div className='session__messages'>
                 {messages.length > 0 ? messages.map((message) => {
                     // key will later be message id
-                    return <p key={Math.floor(Math.random())} className='session__message'>
+                    return <p key={message.id} className='session__message'>
                         {message.message}
                     </p>
                 }) : 'Let your therapist know how things are!'}
