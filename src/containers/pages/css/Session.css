@@ -32,6 +32,7 @@
     border: none;
     resize: none;
     padding-top: 10px;
+    font-family: sans-serif;
 }
 
 .session__input > textarea::-webkit-scrollbar {
