@@ -56,14 +56,12 @@ function Session() {
 
         const querySnapshot = await getDocs(subcollectionRef);
         if (querySnapshot.docs.length === 0) {
-            console.log('doc Does NOT exists')
             await addDoc(subcollectionRef, {
                 messages: arrayUnion({ message: inputValue, timestamp: createTimeStamp(), id: createId() })
             })
         }
         else {
             querySnapshot.forEach(async (doc) => {
-                console.log('doc exists')
                 await updateDoc(doc.ref, { messages: arrayUnion({ message: inputValue, timestamp: createTimeStamp(), id: createId() }) })
             });
         }
