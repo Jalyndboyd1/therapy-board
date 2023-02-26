@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   selectedRoute: "",
+  selectedPath: "/"
 };
 
 export const routes = createSlice({
@@ -10,12 +11,17 @@ export const routes = createSlice({
   reducers: {
     handleSelectedRoute: (state, action) => {
       state.selectedRoute = action.payload;
+    },
+    handleSelectedPath: (state, action) => {
+      state.selectedPath = action.payload
     }
   },
 });
 
-export const { handleSelectedRoute } = routes.actions;
+export const { handleSelectedRoute, handleSelectedPath } = routes.actions;
 
 export const selectRoute = (state) => state.routes.selectedRoute;
+export const selectPath = (state) => state.routes.selectedPath;
+
 
 export default routes.reducer;
