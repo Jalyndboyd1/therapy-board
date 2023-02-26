@@ -15,7 +15,7 @@ export default function Display() {
       <Routes>
         {/* Paths will be dynamic to user later on */}
         <Route path="/" element={<Home />} />
-        <Route path={`/session/${selectedPath}`} element={<Session />} />
+        <Route path={`/${selectedPath}`} element={<Session />} />
       </Routes>
     </div>
   );

@@ -53,7 +53,6 @@ function Session() {
         e.preventDefault();
         // check if a doc exists and if not create add doc to DB with subCollection ref
         const subcollectionRef = collection(doc(db, 'users', user.uid), 'sessionMessages');
-        console.log(subcollectionRef.path)
         const querySnapshot = await getDocs(subcollectionRef);
         if (querySnapshot.docs.length === 0) {
             await addDoc(subcollectionRef, {
