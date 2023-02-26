@@ -8,7 +8,6 @@ import { userObject } from "./features/reducers/userSlice";
 
 function App() {
   const user = useSelector(userObject)
-  console.log(user)
   return (
     <div className="app__container">
       {

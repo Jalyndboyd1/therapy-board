@@ -4,12 +4,13 @@ import { signInWithPopup, GoogleAuthProvider } from '@firebase/auth'
 import { useDispatch } from 'react-redux'
 import { handleUserLogin, handleUserToken } from '../../features/reducers/userSlice'
 
+
 function Login() {
     const dispatch = useDispatch()
 
     const handleSignIn = () => {
         signInWithPopup(auth, provider)
-            .then((result) => {
+            .then(async (result) => {
                 // This gives you a Google Access Token. You can use it to access the Google API.
 
                 const credential = GoogleAuthProvider.credentialFromResult(result);

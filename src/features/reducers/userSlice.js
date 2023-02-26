@@ -12,13 +12,16 @@ export const userData = createSlice({
     handleUserLogin: (state, action) => {
       state.user = action.payload;
     },
+    handleUserLogout: (state, action) => {
+      state.user = null
+    },
     handleUserToken: (state, action) => {
-        state.userToken = action.payload
+      state.userToken = action.payload
     }
   },
 });
 
-export const { handleUserLogin, handleUserToken } = userData.actions
+export const { handleUserLogin, handleUserLogout, handleUserToken } = userData.actions
 
 export const userObject = (state) => state.userData.user;
 
