@@ -1,5 +1,5 @@
 import "./css/Sidebar.css";
-import logo from "../brandmark-design.png";
+import logo from "../in-house-high-resolution-color-logo.png";
 import SidebarOption from "../Components/SidebarOption";
 import { collection, doc, getDocs } from "firebase/firestore"
 import { db } from '../firebase/config'
