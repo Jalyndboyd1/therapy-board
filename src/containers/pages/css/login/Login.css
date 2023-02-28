@@ -1,0 +1,31 @@
+.login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login>img {
+    height: 500px;
+}
+
+.login__google{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+}
+
+.login__google:hover{
+    background-color: #bb84e8;
+    color: #fff;
+}
+
+.login__google > img {
+    height: 30px;
+}

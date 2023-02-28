@@ -3,7 +3,8 @@ import { auth, provider } from '../../firebase/config'
 import { signInWithPopup, GoogleAuthProvider } from '@firebase/auth'
 import { useDispatch } from 'react-redux'
 import { handleUserLogin, handleUserToken } from '../../features/reducers/userSlice'
-
+import "./css/login/Login.css"
+import logo from '../../in-house-high-resolution-color-logo.png'
 
 function Login() {
     const dispatch = useDispatch()
@@ -24,9 +25,12 @@ function Login() {
     }
 
     return (
-        <div>
-            <h1>In House</h1>
-            <button onClick={handleSignIn}>Login</button>
+        <div className='login'>
+            <img src={logo} alt='' />
+            <div onClick={handleSignIn} className='login__google'>
+                Login with Google
+                <img src="https://companieslogo.com/img/orig/GOOG-0ed88f7c.png?t=1633218227" alt='' />
+            </div>
         </div>
     )
 }
