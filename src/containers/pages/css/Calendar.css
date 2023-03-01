@@ -1,0 +1,8 @@
+.calendar{
+
+}
+
+.calendar__days{
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,13 @@
+.calendarDay {
+    border: 1px solid #9687a9;
+    width: 10rem;
+    height: 12rem;
+    padding: 10px;
+    margin: .4rem;
+    cursor: pointer;
+    transition: 350ms ease-in-out;
+}
+
+.calendarDay:hover {
+    transform: scale(1.05);
+}
