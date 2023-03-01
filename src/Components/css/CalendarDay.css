@@ -11,3 +11,24 @@
 .calendarDay:hover {
     transform: scale(1.05);
 }
+
+.calendarDay__available {
+    border: 1px solid blue;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.calendarDay__isUnavailable{
+    border: 1px solid red;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.calendarDay__isBooked{
+    border: 1px solid green;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}

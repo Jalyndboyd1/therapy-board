@@ -10,12 +10,20 @@ function Calendar() {
         currentMonthDays.push(index + 1)
     }
 
+    const monthNames = [
+        "January", "February", "March",
+        "April", "May", "June", "July",
+        "August", "September", "October",
+        "November", "December"
+      ];
+      const currentMonthName = monthNames[now.getMonth()];
+
     return (
         <div className="calendar">
             {/* Fixed Box in the center */}
             <div className="calendar__days">
                 {currentMonthDays.map((day) => {
-                    return <CalendarDay day={day} />
+                    return <CalendarDay day={day} month={currentMonthName} isAvailable/>
                 })}
             </div>
             {/* Calendar Day components will render based on amount of days in month */}
