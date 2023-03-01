@@ -23,7 +23,7 @@ function Calendar() {
             {/* Fixed Box in the center */}
             <div className="calendar__days">
                 {currentMonthDays.map((day) => {
-                    return <CalendarDay day={day} month={currentMonthName} isAvailable/>
+                    return <CalendarDay day={day} month={currentMonthName} isBooked/>
                 })}
             </div>
             {/* Calendar Day components will render based on amount of days in month */}

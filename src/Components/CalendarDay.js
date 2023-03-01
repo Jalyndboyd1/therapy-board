@@ -24,13 +24,22 @@ function CalendarDay({ day, month, isAvailable, isBooked, isUnavailable }) {
         boxShadow: 24,
         p: 4,
     };
+    const handleDayPronounciation = () => {
+        if (day == 1) return 'st'
+        if (day == 2) return 'nd'
+        if (day == 3) return 'rd'
+        else return 'th'
+
+
+    }
 
     return (
         <div className='calendarDay' onClick={handleOpen}>
-            {isAvailable && <p className='calendarDay__available'>{day}</p>}
+            {/* {isAvailable && <p className='calendarDay__available'>{day}</p>}
             {isUnavailable && <p className='calendarDay__isUnavailable'>{day}</p>}
-            {isBooked && <p className='calendarDay__isBooked'>{day}</p>}
-            
+            {isBooked && <p className='calendarDay__isBooked'>{day}</p>} */}
+            <p>{day}</p>
+
             <Modal
                 open={open}
                 onClose={handleClose}
@@ -39,7 +48,7 @@ function CalendarDay({ day, month, isAvailable, isBooked, isUnavailable }) {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        {day} Day of {month}
+                        {day + handleDayPronounciation()} of {month}
                     </Typography>
                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                         Appointment Times Seen As Below
